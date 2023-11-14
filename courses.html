@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = "icon" type = "image/png" href = "https://lirp.cdn-website.com/a52d3c80/dms3rep/multi/opt/download-1920w.jpg">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+    <div style="background-image: url(https://i.ytimg.com/vi/OueCoO-TtuM/maxresdefault.jpg); background-attachment: fixed; height: 650px; width: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative;">
+
+        <!-- Add an overlay for the background image -->
+        <nav class="nav navbar fixed-top navbar-expand-lg bg-light-transparent" style="background-color: rgba(0, 0, 0, 0.678);">
+            <a class="navbar-brand" href="index.html">
+            <img src="https://lirp.cdn-website.com/a52d3c80/dms3rep/multi/opt/download-1920w.jpg" height="50" alt="Your choise logo">
+            </a>
+            <div class="container">
+                <div class="col-md-4 mb-3">
+                <div class="input-group mb-1">
+                    <input type="text" class="form-control border-dark" name="search" placeholder="Search" required>
+                    <div class="input-group-append">
+                        <span class="input-group-text">
+                            <i class="fas fa-search" style="color: rgb(47, 0, 255)"></i>
+                        </span>
+                    </div>
+                </div>
+                </div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: rgb(17, 0, 255)" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: rgb(17, 0, 255)" href="contact.html">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: rgb(4, 0, 255)" href="about.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: rgb(55, 0, 255)" href="logout.html">LOG OUT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <div class="container mt-5" style="clear: both;">
+            <ul class="navbar-nav">
+                <li class="nav-item mb-1">
+                    <a class="nav-link" style="color: rgb(25, 0, 255)" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" style="color: rgb(4, 0, 255)" href="login.html">LOG IN</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" style="color: rgb(0, 4, 255)" href="courses.html"> COURSES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: rgb(47, 0, 255)" href="services.html"> SERVICES</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<br><br>
+<section class="container d-flex justify content-center align-items-center">
+    <form method="POST" action="insert.php">
+        <input type="text" name="fname" placeholder="First Name"><br><br>
+        <input type="text" name="lname" placeholder="Last Name"><br><br>
+        <input type="email" name="email" placeholder="Email"><br><br>
+        <button type="submit" name="save_data">Save Data</button><br><br>
+       
+    </form>
+</section>
+    <section class="container d-flex justify content-center align-items-center">
+
+    <form method="GET" action="insert.php">
+        <input type="text" name="delete_data" placeholder="ID to Delete"><br><br>
+        <button type="submit">Delete Data</button>
+    </form>
+</section>
+   <br><br><br><br><br><br>
+   
+    <footer class="text-center">
+       
+        <p>If you have any questions, do not hesitate to ask them.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-9 col-sm-10 px-2 py-3">
+                <div class="d-flex justify-content-between py-3 my-2">
+                    <a href="https://twitter.com/irinnahrin" target="_blank" class="icon-link" style=" color:rgb(6, 54, 2)"><i class="fab fa-twitter"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=+254711791575" target="_blank" class="icon-link" style=" color:rgb(6, 54, 2)"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/irene.waweru.100/" target="_blank" class="icon-link" style=" color:rgb(6, 54, 2)"><i class="fab fa-instagram"></i></a>
+                    <a href="www.facebook.com" target="_blank" class="icon-link" style=" color:rgb(6, 54, 2)"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <i class="fa fa-map-marker w3-text-red" style="width:30px; color:rgb(6, 54, 2)"></i> Nairobi, Kenya<br><br>
+        <i class="fa fa-phone w3-text-red" style="width:30px; color:rgb(14, 70, 3)"></i> Phone: 0711791575<br>
+        <i class="fa fa-phone w3-text-red" style="width:30px;color:rgb(2, 51, 2)"></i> Phone: 0759759761<br>
+        <div class="py-2 p-1 m-2">
+            <i class="fas fa-envelope-open-text fs-30" style="color: rgb(8, 77, 2);"></i>
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><span class="footer-link-item"> irenewaweru9@gmail.com</span></a><br>
+            <i class="fas fa-envelope-open-text fs-30" style="color: rgb(3, 94, 18);"></i>
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><span class="footer-link-item"> waweruadrian2022@gmail.com</span></a>
+            <p style="color:#000002"id="current-year"></p> 
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

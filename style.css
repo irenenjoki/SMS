@@ -1,0 +1,18 @@
+.navbar-nav .nav-link {
+    font-weight: bold;
+    font-size: larger;
+}
+.icon-link i {
+    font-size: 30px; /* You can adjust the size as needed */
+}
+footer{
+    color: darkgreen;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgba(94, 94, 100, 0.877);
+}
+.footer-link-item{
+    color: #a50b0b;
+    font-weight: bold;
+    text-decoration-line: none;
+}
