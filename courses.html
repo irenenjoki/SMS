@@ -9,26 +9,51 @@
     <link rel="stylesheet" href="style.css">
     <title>Home</title>
 </head>
-<body>
-    <header>
-    <div style="background-image: url(https://i.ytimg.com/vi/OueCoO-TtuM/maxresdefault.jpg); background-attachment: fixed; height: 650px; width: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative;">
+<style>
+    body{scroll-behavior: smooth;}
+    /* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+    background:transparent; /* Change the background color */
+}
 
+/* Scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: #2603eb; /* Change the color of the thumb */
+    border-radius: 6px; /* Add rounded corners */
+}
+
+/* On hover, the thumb will have a different color */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+}
+p {
+    text-align: center;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Overlay background with transparency */
+  }
+</style>
+<body>
+    <div style="background-image: url(https://i.ytimg.com/vi/OueCoO-TtuM/maxresdefault.jpg); background-attachment: fixed; height: 650px; width: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative;">
+<div class="overlay">
         <!-- Add an overlay for the background image -->
         <nav class="nav navbar fixed-top navbar-expand-lg bg-light-transparent" style="background-color: rgba(0, 0, 0, 0.678);">
             <a class="navbar-brand" href="index.html">
-            <img src="https://lirp.cdn-website.com/a52d3c80/dms3rep/multi/opt/download-1920w.jpg" height="50" alt="Your choise logo">
+                <img src="https://lirp.cdn-website.com/a52d3c80/dms3rep/multi/opt/download-1920w.jpg" height="50" alt="Your choice logo">
             </a>
             <div class="container">
-                <div class="col-md-4 mb-3">
-                <div class="input-group mb-1">
-                    <input type="text" class="form-control border-dark" name="search" placeholder="Search" required>
-                    <div class="input-group-append">
-                        <span class="input-group-text">
-                            <i class="fas fa-search" style="color: rgb(47, 0, 255)"></i>
-                        </span>
-                    </div>
-                </div>
-                </div>
+                <!-- Header Links -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" style="color: rgb(17, 0, 255)" href="index.html">HOME</a>
@@ -39,10 +64,22 @@
                     <li class="nav-item">
                         <a class="nav-link" style="color: rgb(4, 0, 255)" href="about.html">ABOUT US</a>
                     </li>
-                    <li class="nav-item">
+                   <!-- <li class="nav-item">
                         <a class="nav-link" style="color: rgb(55, 0, 255)" href="logout.html">LOG OUT</a>
-                    </li>
+                    </li>-->
                 </ul>
+                
+                <!-- Search Bar -->
+                <div class="col-md-4 mb-0">
+                    <div class="input-group mb-1">
+                        <input type="text" class="form-control border-dark" id="searchInput"name="search" placeholder="Search" required>
+                        <div class="input-group-append">
+                            <span class="input-group-text">
+                                <i class="fas fa-search" style="color: rgb(47, 0, 255)"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
         <br>
@@ -51,9 +88,9 @@
                 <li class="nav-item mb-1">
                     <a class="nav-link" style="color: rgb(25, 0, 255)" href="index.html">HOME</a>
                 </li>
-                <li class="nav-item mb-2">
+                <!--<li class="nav-item mb-2">
                     <a class="nav-link" style="color: rgb(4, 0, 255)" href="login.html">LOG IN</a>
-                </li>
+                </li>-->
                 <li class="nav-item mb-2">
                     <a class="nav-link" style="color: rgb(0, 4, 255)" href="courses.html"> COURSES</a>
                 </li>
@@ -62,22 +99,413 @@
                 </li>
             </ul>
         </div>
+        <div class="container mt-1 text-top text-white">
+            <h1 style="font-size: 40px; color:#eb030f; font-family:algerian;" class="display-4">Explore Our Courses</h1>
+    </div>
+    </div>
     </div>
 </header>
 <br><br>
+<h1 style="font-family: algerian;">Courses Offered</h1>
+<h1 style="font-family: algerian;">Bachelor Courses </h1>
+<h2 style="font-family: algerian;">Bachelor Of Science In Information Technology</h2>
+<h3>Program Goal</h3>
+<p>This programme offers skills in use of technology to manage and support business related computer systems. 
+    The courses offers career-based training for the development of business information technology systems using 
+    varied programming techniques, and software and hardware configurations. This course is aimed at bridging the 
+    existing knowledge gap in organisational data storage, business continuity, disaster recovery, security, business 
+    analytics and optimisation and enterprise architecture</p>
+    <h3>Career Opportunities</h3>
+    <ul>
+        <li>Information Security Analyst</li>
+        <li>Software Application Developer</li>
+        <li>Computer Systems Analyst</li>
+        <li>Computer Systems Manager</li>
+        <li>Computer Network Architect</li>
+        <li>Information Research Scientist</li>
+    </ul>
+    <h3>Programme Goals</h3>
+    <ul>
+        <li>To produce IT specialists capable of providing IT business solutions.</li>
+        <li>To prepare professionals with high quality IT knowledge and skills so as to take care of IT business related matters.</li>
+        <li>To develop IT solutions and so as to enhance business and organizational efficiency.</li>
+        <li>Develop analytical and logical thinking, problem solving, communication skills and team work.</li>
+        <li>Acquire business principals in real world perspectives.</li>
+        <h3>Duration of the programme</h3>
+        <ul>
+            <li>Four (4) academic years (Eight semesters).</li>
+        </ul>
+        <h3>Minimum Entry Requirements</h3>
+        <ul>
+            <li> An aggregate grade of C+ and above in K.C.S.E and a minimum grade of C in Mathematics, English and Kiswahili C OR Relevant qualification approved by the University Senate</li>
+        </ul>
+
+        <h2 style="font-family: algerian;">Bachelor Of Science In Computer Science</h2>
+<h3>Program Goal</h3>
+<p>The goal of this program is to develop professionals who use Computational thinking in solving 
+    complex real-life problems with a knack for Computer programming, Database Management, System 
+    Development, Implementation and Maintenance.</p>
+    <h3>Career Opportunities</h3>
+    <ol>
+        <li>IT Manager</li>
+        <li>Chief Technology Officer</li>
+        <li>System Administrators</li>
+        <li>Cloud Security Engineer</li>
+        <li>Data Scientists</li>
+        <li>IoT Expert</li>
+        <li>IT Infrastructure Engineer</li>
+        <li> Systems Developer</li>
+        <li> GIS Expert</li>
+        <li>Game Developer</li>
+    </ol>
+    <h3>Programme Goals</h3>
+    <ol>
+        <li> To develop professionals who use Computational thinking in solving complex real-life problems.
+        </li>
+        <li> To develop professionals with a knack for Computer programming, Database management, system development, implementation and maintenance.
+        </li>
+        <li>To train professionals who can service and manage computer systems at all levels of the organization
+        </li>
+        <li>To train learners on cognitive computing as a major emerging trend in today’s computing world.
+        </li>
+    </ol>
+        <h3>Duration of the programme</h3>
+        <ul>
+            <li>Four (4) academic years (Eight semesters).</li>
+        </ul>
+        <h3>Minimum Entry Requirements</h3>
+        <ul>
+            <li>Be a holder of KCSE (or equivalent examination) certificate with a minimum aggregate of C+ and a minimum of C(Plain) in Mathematics, English and Physics/Physical Science or;
+            </li>
+            <li>Be a holder of the Kenya Advanced Certificate of Education (KACE) certificate with at least 2 Principle passes in Mathematics and Physics.
+            </li>
+            <li>Holder of a related Diploma equivalent to KNEC Diploma from an institution that is recognised by the University Senate with a minimum pass.
+            </li>
+            <li>Have any other relevant qualifications from an institution recognised by the Zetech University Senate
+            </li>
+        </ul>
+
+        <h2 style="font-family: algerian;">Bachelor Of Science In Software Engineering</h2>
+<h3>Program Goal</h3>
+<p>The goal of this program is to impart students with the knowledge, skills and competencies that enable them to 
+    design, code, test and manage quality-measured software systems while demonstrating skills in designing and 
+    developing dependable, secure, reliable, and compliant solutions.</p>
+    <h3>Career Opportunities</h3>
+    <ul>
+        <li> System Administrators
+        </li>
+        <li>Mobile Application Developers
+        </li>
+        <li>Web Master
+        </li>
+        <li>Software Engineer
+        </li>
+        <li>DevOps Engineer
+        </li>
+        <li>Software Tester
+        </li>
+        <li>Network Programmer
+        </li>
+        <li>Full-Stack Developer
+        </li>
+    </ul>
+    <h3>Programme Goals</h3>
+    <ul>
+        <li>To develop professionals with a knack for designing, developing, testing and managing computer software systems and architectures.
+        </li>
+        <li>To equip students with fundamental computing skills and knowledge in software engineering methods, practices, frameworks and design patterns.
+        </li>
+        <li>To expand students’ know-how in software architectures, User experience, System testing, emerging trends in software engineering and professional development.
+        </li>
+        <li>To provide learners with comprehensive scientific and practically applicable competencies needed to become an expert in the field of software engineering.
+        </li>
+        
+        </ul>
+        <h3>Duration of the programme</h3>
+        <ul>
+            <li>Four (4) academic years (Eight semesters).</li>
+        </ul>
+        <h3>Minimum Entry Requirements</h3>
+        <ul>
+            <li>Be a holder of a KCSE (or equivalent examination) certificate with a minimum aggregate of C+ and a minimum of C in Mathematics.
+            </li>
+            <li>Be a holder of the Kenya Advanced Certificate of Education (KACE) certificate with at least a principle pass in Mathematics
+            </li>
+            <li>A PASS in Zetech University Diploma or any other relevant qualifications from an institution recognised by the Zetech University Senate.
+            </li>
+
+        </ul>
+    </ul>
+
+    <h2 style="font-family: algerian;">Bachelor Of Science In Business Information Technology</h2>
+<h3>Program Goal</h3>
+<p>This programme offers skills and training foundational aspects of IT and Business. The course combines the key 
+    aspects of Information Technology such as software development with the key facets of business such as accounting 
+    and operations management to give graduates an edge over their peers. It aims at developing the next generation of
+     business leaders, managers and IT professionals who can successfully apply IT theories and principles to 
+     real-world business applications, opportunities and challenges, innovate businesses IT resources and build bridges
+      between technology and business.</p>
+    <h3>Career Opportunities</h3>
+    <ul>
+        <li>IT Consultant/Manager
+        </li>
+        <li>Web Developer
+        </li>
+        <li>Computer Systems Analyst
+        </li>
+        <li>Software Engineer
+        </li>
+        <li>Computer Systems Manager
+        </li>
+        <li>Data Modeler
+        </li>
+    </ul>
+    <h3>Programme Goals</h3>
+    <ul>
+        <li>This programme is designed to produce information and business savvy graduates by providing a sound background in advanced problem solving, information analysis and project management.
+        </li>
+        <li>Students will develop technical skills with emphasis in business analysis and problem solving, systems analysis, project management and IT management within organizations.
+        </li>
+        
+    </ul>
+        <h3>Duration of the programme</h3>
+        <ul>
+            <li>Four (4) academic years (Eight semesters).</li>
+        </ul>
+        <h3>Minimum Entry Requirements</h3>
+        <ul>
+            <li> An aggregate grade of C+ above in K.C.S.E and a minimum grade of C in Mathematics, English and Kiswahili OR relevant qualification approved by the University Senate.
+            </li>
+        </ul>
+        <h1 style="font-family: algerian;">Diploma Courses </h1>
+<h2 style="font-family: algerian;">Diploma in  Information Technology</h2>
+<h3>Program Goal</h3>
+<p>The programme intends to equip students with a wide range of software, technical and technological ICT 
+    skills required in the industry at diploma level. On graduation, the student is expected to develop and 
+    apply IT solutions to solve practical business problems.
+
+    This programme empowers students to use skills gained to use technology in managing and supporting business
+    related computer systems. This course also bridges the existing knowledge gap in organisational data storage, 
+    business continuity, disaster recovery, security, business analytics and optimisation and enterprise architecture.</p>
+    <h3>Career Opportunities</h3>
+    <ul>
+        <li>IT Consultant
+        </li>
+        <li>Web Developer
+        </li>
+        <li>Computer Systems Manager
+        </li>
+        <li>Software Application Developer
+        </li>
+        <li>IT Manager
+        </li>
+        <li>Data Recovery Manager
+        </li>
+    </ul>
+    <h3>Programme Goals</h3>
+    <ul>
+        <li>To produce IT specialists capable of providing IT business solutions.
+        </li>
+        <li>To prepare professionals with high quality IT knowledge and skills so as to take care of IT business related matters.
+        </li>
+        <li>To develop IT solutions and so as to enhance business and organizational efficiency.
+        </li>
+        <li>Develop analytical and logical thinking, problem solving, communication skills and team work.
+        </li>
+        <li>Acquire business principals in real world perspectives.
+        </li>
+        <h3>Duration of the programme</h3>
+        <ul>
+            <li>Four(4) trimesters
+            </li>
+        </ul>
+        <h3>Minimum Entry Requirements</h3>
+        <ul>
+            <li> An aggregate mean grade of C- and above in K.C.S.E
+            </li>
+            <li>D- in Mathematics
+            </li>
+            <li>D- in either English or Kiswahili OR Relevant qualification approved by the University Senate
+            </li>
+        </ul>
+
+        <h2 style="font-family: algerian;">Diploma in Computer Science</h2>
+<h3>Program Goal</h3>
+<p>This is a programme tailored to prepare learners to be technological experts in their career choices in
+     future to be reliable employees. The course is structured to equip students with the skills required to
+      effectively contribute to this rapidly evolving field and provides them with knowledge and practical 
+      experience of the latest technologies needed to excel in the Computer Science world.</p>
+    <h3>Career Opportunities</h3>
+    <ol>
+        <li>Computer systems analyst
+        </li>
+        <li>Computer network architect
+        </li>
+        <li>Software application developer
+        </li>
+        <li>IT specialist
+        </li>
+    </ol>
+    <h3>Programme Goals</h3>
+    <ol>
+        <li> Advance in graduate studies or be successful practitioners in applied or theoretical fields.
+        </li>
+        <li> Apply communication and organizational skills in the context of ethical issues affecting the discipline or society.
+        </li>
+        <li>   Think critically and creatively to solve local or global problems and become lifelong learners and contributors to society.
+        </li>
+        <li>    Apply knowledge and skills to solve problems effectively and efficiently that contributes to the technical advancement of computer science.
+        </li>
+    </ol>
+        <h3>Duration of the programme</h3>
+        <ul>
+            <li>Four(4) trimesters
+            </li>
+        </ul>
+        <h3>Minimum Entry Requirements</h3>
+        <ul>
+            <li>An aggregate mean grade of C- and above in K.C.S.E
+            </li>
+            <li>D- in Mathematics
+            </li>
+            <li> D- in either English or Kiswahili OR Relevant qualification approved by the University Senate
+            </li>
+            
+        </ul>
+
+        <h2 style="font-family: algerian;">Diploma in Software Engineering</h2>
+<h3>Program Goal</h3>
+<p>This programme offers knowledge and skills in a range of computer skills to ensure learners can provide 
+    solutions to a dynamic world. The course deals with the processes, methodologies, techniques, and tools 
+    of developing high-quality software systems in a cost-effective manner. The course is tailored to meet the 
+    high demand for software engineers among the fastest growing ICT profession in Kenya and beyond.</p>
+    <h3>Career Opportunities</h3>
+    <ul>
+        <li>Software application developer
+        </li>
+        <li>   Information security analyst
+        </li>
+        <li>  Software Engineer
+        </li>
+        <li>   Computer systems manager
+        </li>
+       
+    </ul>
+    <h3>Programme Goals</h3>
+    <ul>
+        <li>  Provide a knowledge base that applies both computer science and engineering principles and practices to the creation, operation, and maintenance of software systems.
+        </li>
+        <li>  The programme sets to provide student with hands-on knowledge in software engineering concepts, analysis, designing, project management, testing, and development with an additional practical programming environment.
+        </li>
+        
+        </ul>
+        <h3>Duration of the programme</h3>
+        <ul>
+            <li>Five (5) trimesters
+            </li>
+        </ul>
+        <h3>Minimum Entry Requirements</h3>
+        <ul>
+            <li>  An aggregate mean grade of C- and above in K.C.S.E
+            </li>
+            <li>   D- in Mathematics
+            </li>
+            <li>D- in either English or Kiswahili OR Relevant qualification approved by the University Senate
+            </li>
+
+        </ul>
+    </ul>
+
+    <h2 style="font-family: algerian;">Diploma in Business Information Technology</h2>
+<h3>Program Goal</h3>
+<p>This programme offers skills and training foundation aspects of IT and Business. The course combines the key 
+    aspects of Information Technology such as software development with the key facets of business such as accounting 
+    and operations management to give graduates an edge over their peers. It aims at developing the next generation of
+     business leaders, managers and IT professionals who can successfully: apply IT principles to real-world business 
+     applications, opportunities and challenges, innovate businesses IT resources and build bridges between IT
+      and business.</p>
+    <h3>Career Opportunities</h3>
+    <ul>
+        <li>  IT Consultant/Manager
+        </li>
+        <li>Business Operations Analyst
+        </li>
+        <li>Web Developer
+        </li>
+        <li>Computer Systems Manager
+        </li>
+        
+    </ul>
+    <h3>Programme Goals</h3>
+    <ul>
+        <li>This programme is designed to produce information and business savvy graduates by providing a sound background in advanced problem solving, information analysis and project management.
+        </li>
+        <li>Students will develop technical skills with emphasis in business analysis and problem solving, systems analysis, project management and IT management within organisations.
+
+        </li>
+        
+    </ul>
+        <h3>Duration of the programme</h3>
+        <ul>
+            <li>Four(4) trimesters            </li>
+        </ul>
+        <h3>Minimum Entry Requirements</h3>
+        <ul>
+            <li>An aggregate mean grade of C- and above in K.C.S.E
+            </li>
+            <li>D- in Mathematics
+            </li>
+            <li>D- in either English or Kiswahili OR Relevant qualification approved by the University Senate
+            </li>
+        </ul>
+        
+    <h1 style="font-family: ALGERIAN; color:#2603eb">STUDENT COURSE REGISTRATION</h1>
 <section class="container d-flex justify content-center align-items-center">
     <form method="POST" action="insert.php">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
         <input type="text" name="fname" placeholder="First Name"><br><br>
+                </div>
+        <div class="col-md-4">
         <input type="text" name="lname" placeholder="Last Name"><br><br>
+        </div>
+        <div class="col-md-4">
         <input type="email" name="email" placeholder="Email"><br><br>
-        <button type="submit" name="save_data">Save Data</button><br><br>
+                </div></div></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <label style="color: beige;" for="package">Degree&Diploma Course</label>
+                    <select class="form-control border-dark" name="course" id="course" required>
+                        <option value="">Register A Course</option>
+                        <option>Bachelor Of Science In Information Technology</option>
+                        <option>Bachelor Of Science In Computer Science</option>
+                        <option>Bachelor of Science in Software Engineering</option>
+                        <option>Bachelor Of Science In Business Information Technology</option>
+                        <option>Diploma In Information Technology</option>
+                        <option>Diploma In Computer Science</option>
+                        <option>Diploma in Software Engineering</option>
+                        <option>Diploma In Business Information Technology</option>
+                    </select>
+                </div>
+                
+            </div>
+        </div><br><br>
+        <button style="align-content:center;"type="submit" name="save_data">Enroll Student</button><br><br>
        
     </form>
 </section>
     <section class="container d-flex justify content-center align-items-center">
 
     <form method="GET" action="insert.php">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
         <input type="text" name="delete_data" placeholder="ID to Delete"><br><br>
+                </div>
+            </div>
+        </div>
         <button type="submit">Delete Data</button>
     </form>
 </section>
@@ -98,15 +526,12 @@
         </div>
         <i class="fa fa-map-marker w3-text-red" style="width:30px; color:rgb(6, 54, 2)"></i> Nairobi, Kenya<br><br>
         <i class="fa fa-phone w3-text-red" style="width:30px; color:rgb(14, 70, 3)"></i> Phone: 0711791575<br>
-        <i class="fa fa-phone w3-text-red" style="width:30px;color:rgb(2, 51, 2)"></i> Phone: 0759759761<br>
         <div class="py-2 p-1 m-2">
             <i class="fas fa-envelope-open-text fs-30" style="color: rgb(8, 77, 2);"></i>
-            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><span class="footer-link-item"> irenewaweru9@gmail.com</span></a><br>
-            <i class="fas fa-envelope-open-text fs-30" style="color: rgb(3, 94, 18);"></i>
-            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><span class="footer-link-item"> waweruadrian2022@gmail.com</span></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><span class="footer-link-item"> makinischool@gmail.com</span></a><br>
             <p style="color:#000002"id="current-year"></p> 
         </div>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -9,25 +9,60 @@
     <link rel="stylesheet" href="style.css">
     <title>Home</title>
 </head>
+<style>
+    body{scroll-behavior: smooth;}
+    /* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+    background:transparent; /* Change the background color */
+}
+
+/* Scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: #2603eb; /* Change the color of the thumb */
+    border-radius: 6px; /* Add rounded corners */
+}
+
+/* On hover, the thumb will have a different color */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+th{
+    background-color: #2603ebc5;
+}
+h1 {
+    text-align: center;
+}
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Overlay background with transparency */
+  }
+</style>
 <body>
     <div style="background-image: url(https://i.ytimg.com/vi/OueCoO-TtuM/maxresdefault.jpg); background-attachment: fixed; height: 650px; width: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative;">
-
-        <!-- Add an overlay for the background image -->
+<div class="overlay">        <!-- Add an overlay for the background image -->
         <nav class="nav navbar fixed-top navbar-expand-lg bg-light-transparent" style="background-color: rgba(0, 0, 0, 0.678);">
             <a class="navbar-brand" href="index.html">
-            <img src="https://lirp.cdn-website.com/a52d3c80/dms3rep/multi/opt/download-1920w.jpg" height="50" alt="Your choise logo">
+                <img src="https://lirp.cdn-website.com/a52d3c80/dms3rep/multi/opt/download-1920w.jpg" height="50" alt="Your choice logo">
             </a>
             <div class="container">
-                <div class="col-md-4 mb-3">
-                <div class="input-group mb-1">
-                    <input type="text" class="form-control border-dark" name="search" placeholder="Search" required>
-                    <div class="input-group-append">
-                        <span class="input-group-text">
-                            <i class="fas fa-search" style="color: rgb(47, 0, 255)"></i>
-                        </span>
-                    </div>
-                </div>
-                </div>
+                <!-- Header Links -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" style="color: rgb(17, 0, 255)" href="index.html">HOME</a>
@@ -38,10 +73,22 @@
                     <li class="nav-item">
                         <a class="nav-link" style="color: rgb(4, 0, 255)" href="about.html">ABOUT US</a>
                     </li>
-                    <li class="nav-item">
+                   <!-- <li class="nav-item">
                         <a class="nav-link" style="color: rgb(55, 0, 255)" href="logout.html">LOG OUT</a>
-                    </li>
+                    </li>-->
                 </ul>
+                
+                <!-- Search Bar -->
+                <div class="col-md-4 mb-0">
+                    <div class="input-group mb-1">
+                        <input type="text" class="form-control border-dark" name="search" placeholder="Search" required>
+                        <div class="input-group-append">
+                            <span class="input-group-text">
+                                <i class="fas fa-search" style="color: rgb(47, 0, 255)"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
         <br>
@@ -50,9 +97,9 @@
                 <li class="nav-item mb-1">
                     <a class="nav-link" style="color: rgb(25, 0, 255)" href="index.html">HOME</a>
                 </li>
-                <li class="nav-item mb-2">
+                <!--<li class="nav-item mb-2">
                     <a class="nav-link" style="color: rgb(4, 0, 255)" href="login.html">LOG IN</a>
-                </li>
+                </li>-->
                 <li class="nav-item mb-2">
                     <a class="nav-link" style="color: rgb(0, 4, 255)" href="courses.html"> COURSES</a>
                 </li>
@@ -61,8 +108,47 @@
                 </li>
             </ul>
         </div>
+    
+    <div class="container mt-5 ">
+        <h1 style="font-size: 40px; color:#eb0303; font-family:algerian;" class="display-2">contact us</h1>
+</div>
+</div>
     </div>
-  
+    <h1 style="font-family:algerian">Contact Us</h1>
+    <table>
+        <tr>
+            <th>Accounts</th>
+            <th>Admissions Nairobi</th>
+            <th>Admissions Kisumu</th>
+            <th>Junior Academy State House Avenue</th>
+        </tr>
+        <tr>
+            <td>020 3877138</td>
+            <td>020 3871874</td>
+            <td>(+254) 748 651 791</td>
+            <td>020 3873348</td>
+        </tr>
+        <tr>
+            <td style="background-color: #2603eb75;">accounts@makinischool.com</td>
+            <td style="background-color: #2603eb75;">admissions@makinischool.com</td>
+            <td style="background-color: #2603eb75;">info.kisumu@makinischool.com</td>
+            <td style="background-color: #2603eb75;">junioracademy@makinischool.com</td>
+
+            
+        </tr>
+        <tr>
+            <td><a href="ticketing portal" >Ticketing Portal </a></td>
+            <td>Chat with us on WhatsApp: (+254) 769 809 152</td>
+            <td>Chat with us on WhatsApp: (+254) 748 651 791</td>
+            <td>Chat with us on WhatsApp: (+254) 791 781 370 or 0713 149 559</td>
+            
+        </tr>
+        <tr>
+            
+            
+        </tr>
+    </table>
+    <br><br><br><br><br>
     <footer class="text-center">
         <br><br>
         <p>If you have any questions, do not hesitate to ask them.</p>
@@ -78,15 +164,13 @@
         </div>
         <i class="fa fa-map-marker w3-text-red" style="width:30px; color:rgb(6, 54, 2)"></i> Nairobi, Kenya<br><br>
         <i class="fa fa-phone w3-text-red" style="width:30px; color:rgb(14, 70, 3)"></i> Phone: 0711791575<br>
-        <i class="fa fa-phone w3-text-red" style="width:30px;color:rgb(2, 51, 2)"></i> Phone: 0759759761<br>
         <div class="py-2 p-1 m-2">
             <i class="fas fa-envelope-open-text fs-30" style="color: rgb(8, 77, 2);"></i>
-            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><span class="footer-link-item"> irenewaweru9@gmail.com</span></a><br>
-            <i class="fas fa-envelope-open-text fs-30" style="color: rgb(3, 94, 18);"></i>
-            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><span class="footer-link-item"> waweruadrian2022@gmail.com</span></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><span class="footer-link-item"> makinischool@gmail.com</span></a><br>
+           
             <p style="color:#000002"id="current-year"></p> 
         </div>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
