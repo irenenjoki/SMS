@@ -20,7 +20,7 @@ if (isset($_POST['save_data'])) {
     $email = $_POST['email'];
     $course = $_POST['course'];
 
-    $sql = "INSERT INTO students (fname, lname, email,course) VALUES ('$fname', '$lname', '$email','$course')";
+    $sql = "INSERT INTO students (fname, lname, email,course) VALUES ('$fname', '$lname', '$email,'$course')";
 
     if ($conn->query($sql) === TRUE) {
         echo "Data inserted successfully.";

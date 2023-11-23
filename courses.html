@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel = "icon" type = "image/png" href = "https://lirp.cdn-website.com/a52d3c80/dms3rep/multi/opt/download-1920w.jpg">
     <link rel="stylesheet" href="style.css">
-    <title>Home</title>
+    <title>SMS</title>
 </head>
 <style>
     body{scroll-behavior: smooth;}
@@ -64,9 +64,9 @@ h1{
                     <li class="nav-item">
                         <a class="nav-link" style="color: rgb(4, 0, 255)" href="about.html">ABOUT US</a>
                     </li>
-                   <!-- <li class="nav-item">
-                        <a class="nav-link" style="color: rgb(55, 0, 255)" href="logout.html">LOG OUT</a>
-                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: rgb(55, 0, 255)" href="sports.html">SPORTS</a>
+                    </li>
                 </ul>
                 
                 <!-- Search Bar -->
@@ -464,16 +464,14 @@ h1{
             <div class="row">
                 <div class="col-md-4">
         <input type="text" name="fname" placeholder="First Name"><br><br>
-                </div>
-        <div class="col-md-4">
+                
         <input type="text" name="lname" placeholder="Last Name"><br><br>
-        </div>
-        <div class="col-md-4">
+       
         <input type="email" name="email" placeholder="Email"><br><br>
                 </div></div></div>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-8">
                     <label style="color: beige;" for="package">Degree&Diploma Course</label>
                     <select class="form-control border-dark" name="course" id="course" required>
                         <option value="">Register A Course</option>
@@ -489,24 +487,24 @@ h1{
                 </div>
                 
             </div>
-        </div><br><br>
+        </div><br>
         <button style="align-content:center;"type="submit" name="save_data">Enroll Student</button><br><br>
-       
     </form>
 </section>
     <section class="container d-flex justify content-center align-items-center">
 
-    <form method="GET" action="insert.php">
-        <div class="container">
+        <form method="GET" action="insert.php">
+            <div class="container">
             <div class="row">
                 <div class="col-md-4">
         <input type="text" name="delete_data" placeholder="ID to Delete"><br><br>
                 </div>
             </div>
         </div>
-        <button type="submit">Delete Data</button>
-    </form>
-</section>
+        <button type="submit">Delete Data</button><br><br>
+        </form>
+    </section>
+        
    <br><br><br><br><br><br>
    
     <footer class="text-center">
